@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <input id="toggle" class="toggle" type="checkbox">
+    <div class="background"></div>
+    <div class="toggle-container">
+        <label for="toggle" class="title"> </label>
+        <span class="mode-text" id="modeText">Light Mode</span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>Text Summarizer</h1>
+    </header>
+
+    <!-- Main Content -->
+    <textarea id="inputText" placeholder="Paste your text here..."></textarea>
+    <div class="button-container">
+        <button onclick="summarize()">Summarize</button>
+        <button onclick="clearText()">Clear</button>
+    </div>
+    <div class="loader" id="loader"></div>
+    <div class="output" id="outputText"></div>
+    <div class="error" id="errorText"></div>
+
+    <!-- Footer -->
+    <footer>
+        Developed by 
+        <a href="https://github.com/Sithum0910" class="github-link" target="_blank">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Icon">
+            Sithum
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
